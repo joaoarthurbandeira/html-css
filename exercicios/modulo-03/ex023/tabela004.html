@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabelas</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+    }
 
-        table {
-            border-collapse: collapse;
-        }
+    caption {
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 10px;
+    }
 
-        caption {
-            font-size: 1.3em;
-            font-weight: bold;
-            padding: 10px;
-        }
-
-        th, td {
-            border: 1px solid gray;
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
+    th,
+    td {
+      border: 1px solid gray;
+      padding: 10px;
+    }
+  </style>
+  <body>
     <h1>Exercício de Tabelas</h1>
+    <!-- prettier-ignore -->
     <table>
         <caption>
             Filmes Favoritos
@@ -37,6 +39,7 @@
                 <th scope="col">Nomes</th>
                 <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
+
         </thead>
         <tfoot>
             <tr>
@@ -51,6 +54,7 @@
                 <td>Alien</td>
                 <td>Rambo</td>
                 <td>Vingadores</td>
+
             </tr>
             <tr>
                 <td>Beatriz Souza</td>
@@ -67,7 +71,7 @@
             <tr>
                 <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
-                <td>Intocáveis</td>
+                <td>Intocávei</td>
                 <td>Amnésia</td>
                 <td>Gladiador</td>
             </tr>
@@ -75,15 +79,17 @@
                 <td>Daniel Lourenço</td>
                 <td>Wall-E</td>
                 <td>Oldboy</td>
-                <td>Dangal</td>
+                <td>Vingadores</td>
             </tr>
             <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars V</td>
+                <td>Janilton</td>
+                <td>Star Wars</td>
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
             </tr>
+            
+            
         </tbody>
     </table>
-</body>
+  </body>
 </html>
