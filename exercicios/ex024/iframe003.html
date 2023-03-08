@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de iframes</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      iframe#tela {
+        width: 95vw;
+        height: 400px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Faça uma escolha</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla facere
+      ea debitis, sunt iusto voluptatem deserunt omnis delectus non voluptates
+      culpa porro maiores excepturi molestiae ducimus, vero autem? Soluta!
+    </p>
+
+    <ul>
+      <li>
+        <a href="paginas-extras/pagina001.html" target="frame"
+          >Primeira página</a
+        >
+      </li>
+      <li>
+        <a href="paginas-extras/pagina002.html" target="frame"
+          >Segunda página</a
+        >
+      </li>
+      <li>
+        <a href="paginas-extras/pagina003.html" target="frame"
+          >Terceira página</a
+        >
+      </li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ut,
+      asperiores natus quo sequi delectus error consequuntur non modi? Vel porro
+      accusantium vero voluptatibus nostrum laborum exercitationem nisi odio
+      rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+      reprehenderit dolorem commodi hic fuga consequuntur consequatur,
+      doloremque non libero doloribus voluptatibus suscipit repellendus?
+      Reiciendis laboriosam voluptas ducimus, blanditiis eum eos!
+    </p>
+
+    <iframe
+      id="tela"
+      name="frame"
+      srcdoc="<h1 style='text-align:center; font-size: 50px' >Escolha uma das opções acima </h1>">
+      <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem,
+      soluta sit. Delectus inventore distinctio ad, quod dignissimos enim
+      deserunt maxime veniam, non nesciunt alias placeat facilis eligendi
+      libero? Enim, praesentium. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Nisi velit placeat alias. Esse, perspiciatis ut
+      molestias a assumenda quae adipisci in inventore labore! Saepe sunt
+      distinctio harum dolorem facere impedit?
+    </p>
+  </body>
+</html>
