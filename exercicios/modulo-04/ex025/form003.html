@@ -8,6 +8,8 @@
   </head>
   <body>
     <h1>Teste de formulário</h1>
+    <h2>Estudando tag "form" e tags que geralmente se usa dentro dela, como a tag "fieldset", "legend", "label" e principalmente a tag "input" e seu atributo "type" com seus valores</h2>
+    <h3>Metodo padrão: GET</h3>
     <form action="cadastro.php" method="get">
       <fieldset>
         <legend>Dados pessoais</legend>
@@ -73,16 +75,37 @@
     </fieldset>
     <fieldset>
         <legend>Esportes favoritos</legend>
-        <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
-        </input><input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label><br>
-        </input><input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label><br>
-        </input><input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label><br>
-        </input>
+        <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label></input><br>
+        <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label></input><br>
+        <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label></input><br>
+        <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label></input><br>
     </fieldset>
       <p>
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpar" />
       </p>
+    <h3>Formulário com Método: POST</h3>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <fieldset>
+                 <legend>attribute values: color, range e file</legend>
+                <p>
+                    <label for="icor">Cor: </label> 
+                    <input type="color" name="cor" id="icor" value="#00ff00">
+                </p>
+                <p>
+                    <label for="inivel">Nível de Satisfação</label>
+                    <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+                </p>
+                <p>
+                    <label for="ifoto">Foto do perfil:</label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+        </fieldset>
+    </form>
     </form>
   </body>
 </html>
